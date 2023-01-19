@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# LEVEL I
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Q1
+**Расскажите, чем, на ваш взгляд, отличается хорошая верстка от плохой с точки зрения**
 
-## Available Scripts
+- пользователя;
+- менеджера проекта;
+- дизайнера;
+- верстальщика;
+- клиентского программиста;
+- серверного программиста.
 
-In the project directory, you can run:
+- для **пользователя** должна быть доступная и понятная информация на странице, так же отзывчивый интерфейс и визуально заметные действия, например при загрузке пользователь должен понимать что что то происходит на странице;
+- для **менеджера** верстка должна соответсовать дизайну и корректно работать;
+- для **дизайнера** верстка должна выглядеть в точности так как она была задумана;
+- для **верстальщика** должен быть чистый, читаемый код, без самоповторов, с использованием современных методологий;
+- для **клиентского** и **серверного** программиста вероятно так же код должен быть читаемым и чистым, внутренняя структура так же должна быть логически распределена;
 
-### `npm start`
+##Q2
+**Опишите основные особенности верстки крупных многостраничных сайтов, дизайн которых может меняться в процессе реализации и поддержки.**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Расскажите о своем опыте верстки подобных сайтов: какие методологии, инструменты и технологии вы применяли на практике.**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Я стараюсь использовать в своих проектах препроцессов scss и разделять стили на компоненты, так же нужно использовать БЭМ для нейминга но с недавнего времени в процессе изучения React мне больше понравился CSSmodules подход с которым стиль каждого компонента располагается в его папке.
 
-### `npm test`
+##Q3
+**Опишите основные особенности верстки сайтов, которые должны одинаково хорошо отображаться как на любом современном компьютере, так и на смартфонах и планшетах под управлением iOS и Android. Расскажите о своем опыте верстки подобных сайтов: какие инструменты и технологии вы применяли, как проверяли результат на различных устройствах, какие именно устройства требовалось поддерживать.**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Я всегда стараюсь ориентироваться на mobile-first принцип для того чтобы сайт корректно выглядел на любом разрешении начиная от 320px, в плане технологий я в основном использую flexbox и иногда grid. Результат проверял в основном используя инструменты разработчика, так же проверял как отображается в разных браузерах у меня или у моих друзей если у меня нет такого браузера.
 
-### `npm run build`
+##Q4
+**Расскажите, какие инструменты помогают вам экономить время в процессе написания, проверки и отладки кода.**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Использую SCSS и разные плагины для VScode, Prettier, Auto Complete Tag, Auto Rename Tag, Auto Close Tag и ES7 + React/Redux/React-Native snippets сильно облегчают жизнь.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+##Q5
+**Вам нужно понять, почему страница отображается некорректно в Safari на iOS и в IE на Windows. Код писали не вы, доступа к исходникам у вас нет. Ваши действия? Сталкивались ли вы с подобными проблемами на практике?**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Я с таким не сталкивался, но скорее всего проблема где то в CSS, можно посмотреть в инспекторе браузера какой CSS и HTML на некорректных элементах используется и проверить на совместимость с этими браузерами.
 
-### `npm run eject`
+##Q6
+**Дизайнер отдал вам макет, в котором не показано, как должны выглядеть интерактивные элементы при наведении мыши. Ваши действия?**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Я уточню при возможности нужны ли им состояния при наведении мыши, возможно так и задумано, и если нужно могу их оживить на свой вкус или со слов без корректировок макета.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##Q7
+**Какие ресурсы вы используете для развития в профессиональной сфере? Приведите несколько конкретных примеров (сайты, блоги и так далее).**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Проходил курс в Нетологии(Программист на JavaScript), в процессе уточнял недопонятные поменты на learn.javascript.ru и stackoverflow, смотрел блог "Фрилансер по жизни" по верстке, сейчас смотрю ArchakovBlog по React.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Какое направление развития вам более близко: JS-программирование, HTML/CSS-верстка или что-то ещё?**
 
-## Learn More
+Мне близка Front-end разработка, в частности ReactJS которым я сейчас активно и занимаюсь надеюсь однажны дойти до fullstack
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Какие ещё области знаний, кроме тех, что непосредственно относятся к работе, вам интересны?**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+По мимо работы играю на бас гитаре и провожу время с близкими.
 
-### Code Splitting
+##Q8
+**Расскажите нам о себе и предоставьте несколько ссылок на последние работы, выполненные вами.**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Меня зовут Богдан, я учился на IT специальность но так вышло что долгое время работал в газовой отрасли, начиная от рабочей и до руководящей должности, но в итоге нашёл себя во Frontend и наверстываю необходимые навыки.
 
-### Analyzing the Bundle Size
+Мои работы:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Магазин кроссовок на React (ReactJS + hooks/React-router/axios/React-skeleton/React-context/SCSS)
 
-### Making a Progressive Web App
+- [https://github.com/Cantidou/react-sneakers]
+- [https://cantidou.github.io/react-sneakers/]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Квиз игра (HTML/CSS/JS)
 
-### Advanced Configuration
+- [https://github.com/Cantidou/quizgame]
+- [https://cantidou.github.io/quizgame/]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### Адаптивная верстка блога (HTML/CSS)
 
-### Deployment
+- [https://github.com/Cantidou/MQ-diploma]
+- [https://cantidou.github.io/MQ-diploma/]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### Адаптивная верстка сервиса облачного гейминга (HTML/CSS/SCSS/JS)
 
-### `npm run build` fails to minify
+- [https://github.com/Cantidou/warplay]
+- [https://cantidou.github.io/warplay/]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Адаптивная верстка сайта поиска лучших цен (HTML/CSS/SCSS/Bootstrap/JS)
+
+- [https://github.com/Cantidou/PriceHunter]
+- [https://cantidou.github.io/PriceHunter/]

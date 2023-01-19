@@ -1,0 +1,151 @@
+.content {
+    position: relative;
+    height: 480px;
+    width: 320px;
+    background: #1698D9;
+    border-radius: 12px;
+    clip-path: polygon(14% 0%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 9%);
+    
+    padding: 19px 16px 16px 48.75px;
+
+    cursor: pointer;
+    
+    
+    //BORDERS FOR CLIPPED CARD
+    &::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        height: calc(100% - 8px);
+        width: calc(100% - 8px);
+
+        background: #F2F2F2;
+        background-image: url("../assets/img/Photo.png");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        border-radius: 12px;
+        clip-path: polygon(14% 0%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 9%);
+        z-index: -1;
+    }
+
+    h2 {
+        color: #000000;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+    
+        margin-top: 5px;
+    }
+
+    p {
+        color: #666666;
+    }
+
+    span {
+        color: #000000;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .quantity {
+        font-size: 14px;
+
+        margin-top: 15px;
+    
+        span {
+            color: #666666;
+            font-size: 14px;
+            line-height: normal;
+        }
+    }
+
+    .weight {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 80px;
+        height: 80px;
+
+        background-color: #1698D9;
+        border-radius: 50%;
+
+        p   {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 400;
+            color: #FFFFFF;
+            line-height: 22px;
+
+            span {
+                font-size: 21px;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.bottomText {
+    text-align: center;
+
+    font-size: 13px;
+    margin-top: 14px;
+    color: #FFFFFF;
+
+    span {
+        color: #1698D9;
+        border-bottom: 1px dashed #1698D9;
+        cursor: pointer;
+    }
+}
+
+.selected {
+    .content {
+        background: #D91667;
+
+        .redText {
+            color: #D91667;
+        }
+    
+        .weight {
+            background: #D91667;
+        }
+    }
+}
+
+.disabled {
+    position: relative;
+    
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 480px;
+        width: 100%;
+
+        background: rgba($color: #B3B3B3, $alpha: 0.6);
+        border-radius: 12px;
+        clip-path: polygon(14% 0%, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 9%);
+    }
+
+    .disabledText {
+        color: #FFFF66;
+    }
+
+    .content {
+        background-color: #B3B3B3;
+    }
+
+
+    .weight {
+        background-color: #B3B3B3;
+    }
+
+}
